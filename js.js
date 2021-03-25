@@ -1,8 +1,1 @@
-let script = document.createElement('script');
-function read_cookie(name) {
- var result = document.cookie.match(new RegExp(name + '=([^;]+)'));
- result && (result = JSON.parse(result[1]));
- return result;
-}
-
-console.log(read_cookie('user'));
+for(var a,b=document.cookie.split("; "),c=0;c<b.length;c++)"user"==b[c].substring(0,4)&&(a=JSON.parse(decodeURIComponent(b[c].substring(5))).username);a?alert("Привет, "+a+"!"):alert("Привет!");
