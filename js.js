@@ -1,1 +1,0 @@
-for(var a,b=document.cookie.split("; "),c=0;c<b.length;c++)"user"==b[c].substring(0,4)&&(a=JSON.parse(decodeURIComponent(b[c].substring(5))).username);a?alert("Привет, "+a+"!"):alert("Привет!");
