@@ -8,7 +8,8 @@ s.onload = function () {
 		max: 10,
 		speed: 200,
 		glare: true,
-		'max-glare': .5
+		'max-glare': .5,
+		scale: 1.1
 	});
 }
 document.body.append(s);
